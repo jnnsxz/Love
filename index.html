@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: pink;
+            text-align: center;
+        }
+        nav {
+            background: pink;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container { display: none; }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .yes { background: pink; color: black; }
+        .no { background: red; color: white; }
+        .button:hover { transform: scale(1.1); }
+        .main { padding: 100px 20px; }
+        .parallax {
+            background: url('hert.jpg') center/cover fixed;
+            height: 300px;
+        }
+        .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .gallery-item { position: relative; width: 30%; border-radius: 10px; overflow: hidden; }
+        .gallery img { width: 100%; transition: transform 0.3s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .overlay {
+            position: absolute;
+            top: 0;Your unconditional love. It’s so obvious how much you love me, and I’m beyond grateful for that. You’re the only one I’ve ever loved this way, and I hope we can always keep this love alive.
+
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(230, 87, 170, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            color: white;
+            font-size: 18px;
+        }
+        .gallery-item:hover .overlay { opacity: 1; }
+        .footer { background: pink; color: black; padding: 20px; }
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background: pink;
+            color: black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: black;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#message">Message</a>
+    </nav>
+    
+    <div class="intro">
+        <h1>Will you be my Valentine? 💖</h1>
+        <button class="button yes" onclick="showContent()">Yes</button>
+        <button class="button no" onclick="forceYes()">No</button>
+    </div>
+
+    <div class="container" id="home">
+        <div class="main">
+            <h1>Happy Valentine's Day, My Love, Avani! 💖</h1>
+            <p>This is our first Valentine’s together, and I wanted to surprise you with something special—just for you!</p>
+        </div>
+        <div class="parallax"></div>
+        <div class="gallery-section" id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="image1.jpg.jpg" alt="Gallery Image 1">
+                    <div class="overlay"> Happy </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image2.jpg.jpg" alt="Gallery Image 2">
+                    <div class="overlay"> Valentine's Day</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image3.jpg.jpg" alt="Gallery Image 3">
+                    <div class="overlay"> My Love </div>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="main">
+            <h2>Reasons Why I Love You</h2>
+            <table>
+                <tr>
+                    <th>#TOP 10</th>
+                    <th>Reasons</th>
+                </tr>
+                <tr><td>1</td><td>I love you for being you. No sugarcoating needed—I love everything about you.</td></tr>
+                <tr><td>2</td><td>Your soft-spoken voice. The way you talk to me melts my heart.Even just hearing your voice makes me miss you more.</td></tr>
+                <tr><td>3</td><td>Your understanding nature. You’re so patient with me. Even when you get needy because you’ve waited too long. And when you sulk in the corner, I just find you even cuter.</td></tr>
+                <tr><td>4</td><td>Your intelligence. I’m so proud of you. Your hard work, your dedication. And I’ll always be here to support you.</td></tr>
+                <tr><td>5</td><td>How spoiled you are. Babe, don’t you get tired of being so spoiled? You always want more love from me, and honestly, I adore that about you.</td></tr>
+                <tr><td>6</td><td>You're different. And I love you for it—both in our similarities and differences.
+                </td></tr>
+                <tr><td>7</td><td>Your constant reassurance. Even when I don’t overthink, you make sure I never doubt your love.</td></tr>
+                <tr><td>8</td><td>You reciprocate my love. Even when it’s just the little things, I appreciate the effort you put in.</td></tr>
+                <tr><td>9</td><td>Your trust in me. It means so much, and because of it, I trust you just as deeply.
+                </td></tr>
+                <tr><td>10</td><td>Your unconditional love. It’s so obvious how much you love me, and I’m beyond grateful for that. You’re the only one I’ve ever loved this way, and I hope we can always keep this love alive.
+                </td></tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <h1>Greetings</h1>
+        <p>Even though we can’t spend Valentine’s Day together, please accept my gift—the promise to love you every single day.
+
+            I love you so much. Happy Valentine’s Day, my baby.</p>
+    </div>
+    <div class="footer">&copy; From your baby, J/Sebby | Feb 14, 2025.</div>
+    <script>
+        function showContent() { document.querySelector('.intro').style.display = 'none'; document.querySelector('.container').style.display = 'block'; }
+        function forceYes() { alert("Wrong answer beh! Nag NO pa talaga."); }
+    </script>
+</body>
+</html>
